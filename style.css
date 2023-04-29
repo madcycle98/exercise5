@@ -1,0 +1,120 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter Tight', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 4rem;
+    color: rgb(29, 53, 87);
+}
+
+h2 {
+    color: rgb(29, 53, 87);
+    letter-spacing: .25rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.header-wrapper {
+    padding: 2em 5em;
+}
+
+.application {
+    background-color: rgb(168, 218, 220);
+    padding-bottom: 3rem;
+}
+
+#render-contacts {
+    padding: 0 5em;
+}
+
+.single {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(241, 250, 238, 0.5);
+    border-radius: 50px;
+    padding: 1.5rem 3rem;
+    margin: 2rem 0;
+}
+
+.single img {
+    border-radius: 37.5px;
+}
+
+.fa-star {
+    cursor: pointer;
+}
+
+.female {
+    border: 7.5px solid rgb(238, 176, 186);
+}
+
+.male {
+    border: 7.5px solid rgb(56, 74, 179);
+}
+
+.rainbow {
+    position: relative;
+    border: 0px solid transparent;
+    background: linear-gradient(
+        145deg,
+        rgba(56, 74, 179) 25%,
+        rgba(238, 176, 186) 75%
+    );
+    background-clip: padding-box;
+    padding: 7.5px;
+}
+
+.single p {
+    color: rgb(29, 53, 87);
+    line-height: 1.5rem;
+}
+
+.name {
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+/* Pagination */
+
+.pagination-container {
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    justify-content: center;
+  }
+  .pagination-number,
+  .pagination-button{
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    margin: 0.25rem 0.25rem;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: .2rem;
+  }
+  .pagination-number:hover,
+  .pagination-button:not(.disabled):hover {
+    background: #fff;
+  }
+  .pagination-number.active {
+    color: #fff;
+    background: #0085b6;
+  }
+
+  .hidden {
+    display: none;
+  }
