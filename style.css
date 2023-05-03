@@ -1,4 +1,6 @@
-
+:root {
+    --celeste: rgb(29, 53, 87);
+}
 
 * {
     margin: 0;
@@ -12,21 +14,77 @@ body {
     margin: 0 auto;
 }
 
+/* Text styling */
+
 h1 {
     font-weight: 200;
     font-size: 4rem;
-    color: rgb(29, 53, 87);
+    color: var(--celeste);
 }
 
 h2 {
-    color: rgb(29, 53, 87);
+    color: var(--celeste);
     letter-spacing: .25rem;
     font-weight: 200;
     cursor: pointer;
 }
 
+#show-favorites,
+#show-all {
+    font-weight: 700;
+}
+
+span {
+    font-size: .8rem;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+/* Layout and styling */
+
 .header-wrapper {
-    padding: 2em 5em;
+    padding: 2em 0 0;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subheader-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#show-favorites,
+#show-all{
+    color: var(--celeste);
+    border: none;
+    background-color: rgb(255, 183, 3);
+    border-radius: 1.5rem;
+    padding: .5rem 1.5rem;
+    max-width: 15rem;
+    cursor: pointer;
+}
+
+#show-favorites:hover,
+#show-all:hover {
+    background-color: rgb(236, 203, 119);
+    transition: all .3s ease;
+    border-radius: 0;
+}
+
+form > * {
+    border-radius: 1.5rem;
+    border: none;
+}
+
+#name-value {
+    padding: .5rem 1.5rem;
 }
 
 .application {
@@ -35,7 +93,9 @@ h2 {
 }
 
 #render-contacts {
-    padding: 0 5em;
+    padding: 0 0em;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .single {
@@ -83,7 +143,6 @@ h2 {
 }
 
 .name {
-    font-size: 2rem;
     padding-bottom: .5rem;
 }
 

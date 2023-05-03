@@ -11,26 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cb15209e02.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="application">
         <header>
             <div class="header-wrapper">
                 <h1>Contacts</h1>
-                <button id="show-favorites">Show favorites</button>
+                <div class="subheader-wrapper">
+                  <form>
+                    <label class="label" for="name-value">Search here =></label>
+                    <input type="text"  id="name-value">
+                  </form>
+                  <button id="show-favorites">Show favorites</button>
+                </div>
             </div>
         </header>
-        <nav class="pagination-container">
-            <button class="pagination-button" id="prev-button" title="Previous page" aria-label="Previous page">
-              &lt;
-            </button>
-            
-            <div id="pagination-numbers">
-            </div>
-            
-            <button class="pagination-button" id="next-button" title="Next page" aria-label="Next page">
-              &gt;
-            </button>
-          </nav>
 
         <ul id="render-contacts" data-current-page="1" aria-live="polite"></ul>
 

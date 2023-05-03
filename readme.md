@@ -1,4 +1,4 @@
-Dato il dataset scaricabile al link https://raintonic.com/careers/es5_dataset.json creare
+Dato il dataset content.json creare
 una mini applicazione che mostri in modo consono i dati. Fornire queste funzionalità:
 a. possibilità di ricercare i contatti tramite ricerca (sui campi first_name e
 last_name);
