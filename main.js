@@ -111,8 +111,8 @@ fetch('./content.json', )
         }
     
         function renderStars(){
-            let convertedToNum = parseFloat(favorites.find(el => el == id))
-            let idParsed = parseFloat(id)
+            let convertedToNum = parseInt(favorites.find(el => el == id))
+            let idParsed = parseInt(id)
 
             if(idParsed === convertedToNum){
                 return `"fa-solid fa-star"></i></p>`
